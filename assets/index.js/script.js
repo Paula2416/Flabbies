@@ -28,6 +28,9 @@ function setFlabby() {
     flabby.src = "../images/flabby.png";
 
     let num = getRandomBear();
+    if (currFlabby2Bear && currFlabby2Bear.id == num) {
+        return;
+    }
     currFlabbyBear = document.getElementById(num);
     currFlabbyBear.appendChild(flabby);
 }
@@ -40,6 +43,9 @@ function setFlabby2() {
     let flabby2 = document.createElement("img");
     flabby2.src = "../assets/images/flabby2.png";
     let num = getRandomBear();
+    if (currFlabbyBear && currFlabbyBear.id == num) {
+        return;
+    }
     currFlabby2Bear = document.getElementById(num);
     currFlabby2Bear.appendChild(flabby2);
 }
