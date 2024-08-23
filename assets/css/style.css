@@ -2,7 +2,7 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    background: url('../images/center.jpg') no-repeat center center; /* Background image for the body */
+    background: url('../images/mainbg.jpg') no-repeat center center; /* Background image for the body */
     /* background-color: red; */
     background-size: cover;
     margin: 0;
@@ -18,7 +18,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10%;
-    background: url('../images/center.jpg') no-repeat center center; /* Background image for the board */
+    background: url('../images/bg.jpg') no-repeat center center; /* Background image for the board */
     background-size: cover;
     border: 2px solid yellow;
     border-radius: 10px;
