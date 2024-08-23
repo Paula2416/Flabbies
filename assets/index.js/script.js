@@ -1,4 +1,5 @@
 let currFlabbyBear;
+let currFlabby2Bear;
 
 
 window.onload = function() {
@@ -20,12 +21,27 @@ function getRandomBear()
     return num.toString();
 }
 function setFlabby() {
+    if (currFlabbyBear) {
+        currFlabbyBear.innerHTML = "";
+    }
     let flabby = document.createElement("img");
-    flabby.src = "./flabby.png";
+    flabby.src = "../images/flabby.png";
 
     let num = getRandomBear();
     currFlabbyBear = document.getElementById(num);
     currFlabbyBear.appendChild(flabby);
+}
+
+function setFlabby2() {
+   
+    if (currFlabby2Bear) {
+        currFlabby2Bear.innerHTML = "";
+    }
+    let flabby2 = document.createElement("img");
+    flabby2.src = "../assets/images/flabby2.png";
+    let num = getRandomBear();
+    currFlabby2Bear = document.getElementById(num);
+    currFlabby2Bear.appendChild(flabby2);
 }
 
 
