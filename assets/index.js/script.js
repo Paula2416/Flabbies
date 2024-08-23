@@ -25,6 +25,9 @@ function getRandomBear()
     return num.toString();
 }
 function setFlabby() {
+    if (gameOver) {
+        return;
+    }
     if (currFlabbyBear) {
         currFlabbyBear.innerHTML = "";
     }
@@ -40,6 +43,9 @@ function setFlabby() {
 }
 
 function setFlabby2() {
+    if (gameOver) {
+        return;
+    }
    
     if (currFlabby2Bear) {
         currFlabby2Bear.innerHTML = "";
@@ -55,6 +61,10 @@ function setFlabby2() {
 }
 
 function selectTile() {
+    if (gameOver) {
+        return;
+    }
+
 
     if (this == currFlabbyBear) {
         score += 10;
