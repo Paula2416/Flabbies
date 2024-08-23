@@ -1,8 +1,52 @@
+/* Global Styles */
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    background-color: red;
+    background: url('../images/center.jpg') no-repeat center center; /* Background image for the body */
+    /* background-color: red; */
     background-size: cover;
     margin: 0;
-    padding:0;
+    padding: 0;
+}
+
+/* Responsive Board Container */
+#board {
+    width: 90%;
+    max-width: 600px;
+    padding-bottom: 40%; /* Maintains the aspect ratio */
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+    background: url('../images/center.jpg') no-repeat center center; /* Background image for the board */
+    background-size: cover;
+    border: 2px solid yellow;
+    border-radius: 10px;
+}
+
+/* Responsive Design Adjustments */
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+    #board {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 5%;
+        padding-bottom: 70%; 
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    #board {
+        grid-template-columns: 1fr; 
+        padding-bottom: 80%; 
+    }
+}
+
+/* Very small devices (landscape phones, less than 576px) */
+@media (max-width: 575px) {
+    #board {
+        width: 95%; 
+        padding-bottom: 135%; 
+    }
 }
